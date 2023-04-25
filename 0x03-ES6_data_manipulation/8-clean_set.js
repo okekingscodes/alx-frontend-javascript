@@ -2,7 +2,7 @@ export default function cleanSet(set, startString) {
   let res = '';
   if (!startString || !startString.length) return res;
   for (const element of set) {
-    if (element && el.startsWith(startString)) {
+    if (element && element.startsWith(startString)) {
       res += `${element.slice(startString.length)}-`;
     }
   }
